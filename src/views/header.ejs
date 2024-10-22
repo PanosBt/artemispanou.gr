@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+
+
+        <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/styles.css">
+
+        <title><%= title %></title>
+    </head>
+
+    <body <%= typeof body_class != 'undefined' ? `class=${body_class}` : '' %>>
+        <header>
+            <a href="/"><img src="/img/logo.svg" class="logo"/></a>
+            <button class="chip chip--btn" onclick="document.getElementById('footer').scrollIntoView();"><span>Get in touch</span></button>
+        </header>

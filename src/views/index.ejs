@@ -1,0 +1,119 @@
+<%- include('header', {title: 'Αρχική', body_class: 'homepage'}) %>
+
+
+<div class="intro-container">
+    <div class="intro">
+        <h4 class="homepage_heading">Artemis Design</h4>
+        <h1 class="homepage_heading mobile_only">Portfolio</h1>
+        <div class="intro-chips">
+            <div class="chip"><span>UI/UX Design</span></div>
+            <div class="chip"><span>Graphic Design</span></div>
+        </div>
+    </div>
+    <h1 class="homepage_heading desktop_only">Portfolio</h1>
+    <p class="hero-text">As a UI/UX Designer, I bring ideas to life by blending creativity with functionality, ensuring every interaction feels seamless</p>
+    <div class="icons">
+        <img class="icon" src="/icons/photoshop.svg" />
+        <img class="icon" src="/icons/illustrator.svg" />
+        <img class="icon" src="/icons/figma.svg" />
+    </div>
+</div>
+
+<div class="moving_txt_container">
+    <span class="moving_txt">Creative Designer Creative Visual Designer</span>
+</div>
+
+
+<div class="timeline-headline">
+    <h2>My Journey so far</h2>
+</div>
+
+<div class="my_journey">
+    <div class="timeline">
+
+        <div class="timeline-grid" id="timeline-grid">
+            <div class="timeline-progress">
+                <div class="timeline-bar"></div>
+                <div class="timeline-fade-top"></div>
+                <div class="timeline-fade-bottom"></div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-div-spacer"
+                    style="will-change: opacity; opacity: 1;"></div>
+                <div class="timeline-center">
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-div"
+                    style="will-change: opacity; opacity: 0.2;">
+                    <div class="align-vertically">
+                        <div class="timeline-tag">
+                            <span>2018</span>
+                        </div>
+                        <h4>VAKALO  ART & DESIGN BA WEB DESIGN</h4>
+                        <p>My design journey began in college, where I found a passion for creating intuitive user interfaces. After graduating with a degree in BA on Digital Design , I honed my skills in tools like Figma, Illustrator, Photoshop, and After Effects.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-center mobile_only">
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-div"
+                    style="will-change: opacity; opacity: 0.2;">
+                    <div class="align-vertically">
+                        <div class="timeline-tag">
+                            <span>2021</span>
+                        </div>
+                        <h4>INTERNSHIP IN MAINSYS AS WEB DESIGNER & FRONTEND DEVELOPER</h4>
+                        <p>As an intern, I worked with Photoshop, Magento, VS Code (HTML, CSS, JS), and Adobe XD. I gained experience in web design and development, contributing to projects and building user-friendly websites.</p>
+                    </div>
+                </div>
+                <div class="timeline-center desktop_only">
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-div-spacer"
+                    style="will-change: opacity; opacity: 0.2;"></div>
+
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-div-spacer"
+                    style="will-change: opacity; opacity: 1;"></div>
+                <div class="timeline-center">
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-div"
+                    style="will-change: opacity; opacity: 1;">
+                    <div class="align-vertically">
+                        <div class="timeline-tag">
+                            <span>2022</span>
+                        </div>
+                        <h4>WORKING ON ADS SOLUTIONS
+                            <br>
+                            AS A UI - UX DESIGNER
+                        </h4>
+                        <p>For the past two years, I’ve worked at a digital agency, contributing to projects that have helped me grow as a designer, always focusing on user-friendly design.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="projects">
+    <div class="projects__intro">
+        <h3>Projects</h3>
+        <div class="desc"><span>A selection of my work, built from scratch!</span></div>
+        <a href="/case_studies" class="chip chip--btn desktop_only"><span>Case Studies</span></a>
+    </div>
+    <div class="projects__carousel">
+        <% Object.keys(projects).forEach(function(key) { %>
+            <%- include('project', { name: key, project: projects[key] }); %>
+        <% }); %>
+    </div>
+    <a href="/case_studies" class="chip chip--btn mobile_only"><span>Case Studies</span></a>
+</div>
+
+<%- include('footer') %>

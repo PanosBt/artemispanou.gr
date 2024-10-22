@@ -1,0 +1,27 @@
+<%- include('header', {title: 'Case Studies'}) %>
+
+<div class="intro-container">
+    <h1>Case Studies</h1>
+    <div class="case_studies__intro">
+        <div class="circle_container">
+            <div class="circle">
+                <span>10</span>
+            </div>
+            <span>Selected Projects</span>
+        </div>
+        <span>
+            Explore my case studies from the past two years, showcasing how I've tackled design challenges and crafted user-centered solutions.<br class="mobile_only"><br class="mobile_only"> Each project highlights my process and the impact of my work, from initial research to final design.
+        </span>
+    </div>
+</div>
+
+<div class="use_cases">
+    <% Object.keys(projects).forEach(function(key) { %>
+        <%- include('project', { name: key, project: projects[key] }); %>
+    <% }); %>
+</div>
+
+<hr>
+
+<%- include('footer') %>
+

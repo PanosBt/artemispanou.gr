@@ -1,0 +1,14 @@
+<a href="/project/<%= name %>">
+    <div class="project"
+    style="background-image: linear-gradient(179deg, rgba(0, 0, 0, 0.10) 40%, rgba(0, 0, 0, 0.72) 100%), url('/img/projects/<%= name %>/<%= name %>_main.webp');">
+        <span><%= project.title %></span>
+        <div class="project__footer">
+            <div class="chips_container">
+                <% project.chips.forEach(chip_txt => { %>
+                    <div class="chip"><span><%= chip_txt %></span></div>
+                 <% }); %>
+            </div>
+            <img src="/icons/arrow.svg" />
+        </div>
+    </div>
+</a>

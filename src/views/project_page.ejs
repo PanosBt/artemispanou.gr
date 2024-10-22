@@ -1,0 +1,134 @@
+<%- include('header', {title: currentProject.data.title}) %>
+
+<div class="intro-container intro__project">
+    <a href="/case_studies" class="intro__project__nav">
+        <img src="/icons/arrow_left.svg" />
+        <span>Case Studies</span>
+    </a>
+    <div class="intro">
+        <div>
+            <h1><%= currentProject.data.title %></h1>
+        </div>
+        <div class="intro-chips">
+            <% currentProject.data.chips.forEach(chip_txt => { %>
+                <div class="chip"><span><%= chip_txt %></span></div>
+             <% }); %>
+        </div>
+    </div>
+    <span><%= currentProject.data.hero_text %></span>
+    <div class="project__tools">
+        <span>Project tools</span>
+        <div class="icons">
+            <img class="icon" src="/icons/photoshop.svg" />
+            <img class="icon" src="/icons/illustrator.svg" />
+            <img class="icon" src="/icons/figma.svg" />
+        </div>
+    </div>
+</div>
+
+<img class="project_img project_img__wide"
+    src="/img/projects/<%= currentProject.name %>/<%= currentProject.name %>_main_wide.webp" />
+
+<div class="project_main">
+    <div class="project_main_intro">
+        <div class="project_main__data">
+            <div class="row">
+                <div class="col">
+                    <span class="label">Year</span>
+                    <span class="data">2024</span>
+                </div>
+                <div class="col">
+                    <span class="label">Client</span>
+                    <span class="data"><%= currentProject.data.title %></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <span class="label">Project</span>
+                    <span class="data">Logo, Website</span>
+                </div>
+            </div>
+        </div>
+        <div class="project_main__description">
+            <h4>Description</h4>
+            <p><%- currentProject.data.desc_html %></p>
+        </div>
+    </div>
+
+    <div class="project_main_img_container">
+        <div>
+            <a data-fslightbox href="/img/projects/<%= currentProject.name %>/<%= currentProject.name %>_01.webp">
+                <img class="project_img"
+                    src="/img/projects/<%= currentProject.name %>/<%= currentProject.name %>_01.webp" />
+            </a>
+        </div>
+        <div>
+            <a data-fslightbox href="/img/projects/<%= currentProject.name %>/<%= currentProject.name %>_02.webp">
+                <img class="project_img"
+                    src="/img/projects/<%= currentProject.name %>/<%= currentProject.name %>_02.webp" />
+            </a>
+        </div>
+    </div>
+
+    <h3><%= currentProject.data.main_heading %></h3>
+
+    <div class="project_main_img_container">
+        <div>
+            <a data-fslightbox href="/img/projects/<%= currentProject.name %>/<%= currentProject.name %>_03.webp">
+                <img class="project_img"
+                    src="/img/projects/<%= currentProject.name %>/<%= currentProject.name %>_03.webp" />
+            </a>
+        </div>
+        <div>
+            <a data-fslightbox href="/img/projects/<%= currentProject.name %>/<%= currentProject.name %>_04.webp">
+                <img class="project_img"
+                    src="/img/projects/<%= currentProject.name %>/<%= currentProject.name %>_04.webp" />
+            </a>
+            <a data-fslightbox href="/img/projects/<%= currentProject.name %>/<%= currentProject.name %>_05.webp">
+                <img class="project_img"
+                    src="/img/projects/<%= currentProject.name %>/<%= currentProject.name %>_05.webp" />
+            </a>
+        </div>
+    </div>
+
+    <h3>
+        Ready to see more creativity?
+        <br>
+        <br class="mobile_only">
+        Continue with my next work!
+    </h3>
+</div>
+
+<hr>
+
+<div class="projects_nav">
+    <a href="/project/<%= prevProject.name %>">
+        <div class="project project_nav"
+        style="background-image: linear-gradient(179deg, rgba(0, 0, 0, 0.10) 40%, rgba(0, 0, 0, 0.72) 100%), url('/img/projects/<%= prevProject.name %>/<%= prevProject.name %>_project_nav.webp');"
+        >
+            <div class="project_nav__content project_nav__prev">
+                <span>Previous Project</span>
+                <div class="project__footer">
+                    <img src="/icons/arrow_left.svg" />
+                    <h5><%= prevProject.data.title %></h5>
+                </div>
+            </div>
+        </div>
+    </a>
+    <a href="/project/<%= nextProject.name %>">
+        <div class="project project_nav"
+        style="background-image: linear-gradient(179deg, rgba(0, 0, 0, 0.10) 40%, rgba(0, 0, 0, 0.72) 100%), url('/img/projects/<%= nextProject.name %>/<%= nextProject.name %>_project_nav.webp');"
+        >
+            <div class="project_nav__content project_nav__next ">
+                <span>Next Project</span>
+                <div class="project__footer">
+                    <h5><%= nextProject.data.title %></h5>
+                    <img src="/icons/arrow_right.svg" />
+                </div>
+            </div>
+
+        </div>
+    </a>
+</div>
+
+<%- include('footer') %>
