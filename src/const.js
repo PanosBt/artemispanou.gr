@@ -55,3 +55,5 @@ export const PROJECTS = {
         main_heading: 'Website & Responsive view',
     },
 };
+
+export const ASSETS_VERSION = 1;

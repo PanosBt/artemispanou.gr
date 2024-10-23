@@ -1,10 +1,10 @@
 import koaRouter from 'koa-router';
-import { PROJECTS } from './const.js'
+import { PROJECTS, ASSETS_VERSION } from './const.js'
 
 const router = new koaRouter();
 
-router.get('/', async (ctx) => await ctx.render('index', { projects: PROJECTS }));
-router.get('/case_studies', async (ctx) => await ctx.render('case_studies', { projects: PROJECTS }));
+router.get('/', async (ctx) => await ctx.render('index', { projects: PROJECTS, assets_version: ASSETS_VERSION }));
+router.get('/case_studies', async (ctx) => await ctx.render('case_studies', { projects: PROJECTS, assets_version: ASSETS_VERSION }));
 router.get('/project/:project_name', async (ctx) => {
     const projectName = ctx.params.project_name,
         keys = Object.keys(PROJECTS),
@@ -20,6 +20,7 @@ router.get('/project/:project_name', async (ctx) => {
             currentProject: { name: projectName, data: PROJECTS[projectName] },
             nextProject: { name: nextProjectName, data: PROJECTS[nextProjectName] },
             prevProject: { name: prevProjectName, data: PROJECTS[prevProjectName] },
+            assets_version: ASSETS_VERSION
         });
     } else {
         ctx.redirect('/');
