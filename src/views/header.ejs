@@ -3,8 +3,6 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-        <title>Artemis Panou - UI / UX Designer</title>
-        <meta property="og:title" content="Artemis Panou - UI / UX Designer">
         <meta name="robots" content="all">
         <meta name="keywords" content="artemis, panou, ui, ux, designer, greek">
         <meta name="description" content="Artemis Panou - UI / UX Designer">
@@ -19,10 +17,12 @@
         <link rel="stylesheet" href="/css/styles.css?v=<%= assets_version %>">
 
         <title><%= title %></title>
+        <meta property="og:title" content="Artemis Panou - UI / UX Designer | <%= title %>">
+
     </head>
 
     <body <%= typeof body_class != 'undefined' ? `class=${body_class}` : '' %>>
         <header>
-            <a href="/"><img src="/img/logo.svg" class="logo"/></a>
+            <a href="/"><img src="/img/logo.svg" class="logo"></a>
             <button class="chip chip--btn" onclick="document.getElementById('footer').scrollIntoView();"><span>Get in touch</span></button>
         </header>
