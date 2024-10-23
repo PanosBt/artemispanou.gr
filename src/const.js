@@ -56,4 +56,4 @@ export const PROJECTS = {
     },
 };
 
-export const ASSETS_VERSION = 1;
+export const ASSETS_VERSION = 4;

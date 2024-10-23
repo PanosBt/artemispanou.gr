@@ -26,6 +26,7 @@ body {
     margin: 0;
     color: #fff;
     font-family: 'Syne';
+    font-size: 0;
 }
 
 span, p {
@@ -540,7 +541,7 @@ h1.homepage_heading {
 
     .project {
         width: calc(81vw - 100px);
-        height: calc(70vw - 20px);
+        height: calc(69vw - 20px);
         padding-bottom: 20px;
     }
 
@@ -767,8 +768,21 @@ footer span {
 }
 
 .use_cases a {
-    flex-basis: calc(50% - 30px); /* Each item will take 50% width minus the margin */
-    margin-bottom: 30px; /* Add bottom margin between rows */
+    flex-basis: calc(50% - 30px);
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1140px) {
+    .case_studies__intro {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .case_studies__intro > span {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -779,8 +793,9 @@ footer span {
     }
 
     .case_studies__intro span {
-        font-size: 24px;
+        font-size: 5.5vw;
         text-align: center;
+        margin-bottom: 0;
     }
 
     .use_cases {
