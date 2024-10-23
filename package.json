@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "NODE_ENV=dev nodemon -e js,mjs,ejs,json --watch src src/server.js"
+    "dev": "NODE_ENV=dev nodemon -e js,mjs,ejs,json --watch src src/server.js",
+    "production": "NODE_ENV=production node src/server.js"
   },
   "author": "PanosBt",
   "license": "ISC",
