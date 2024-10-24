@@ -764,7 +764,7 @@ footer span {
 }
 
 .use_cases a:not(:nth-child(2n)) {
-    margin-right: 30px;
+    margin-right: 1.6vw;
 }
 
 .use_cases a {
