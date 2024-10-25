@@ -178,9 +178,11 @@ p {
     font-size: 16px;
 }
 
-.chip--btn:hover {
-    background-color: #545CFF;
-    backdrop-filter: blur(7.5px);
+@media (min-width: 480px) {
+    .chip--btn:hover {
+        background-color: #545CFF;
+        backdrop-filter: blur(7.5px);
+    }
 }
 
 @media (max-width: 1440px) {
@@ -464,13 +466,15 @@ h1.homepage_heading {
     transition: all .5s ease;
 }
 
-.project:hover {
-    background-size: 110%;
-}
+@media (min-width: 480px) {
+    .project:hover {
+        background-size: 110%;
+    }
 
-.project:not(.project_nav):hover img {
-    transform: rotate(-45deg);
+    .project:not(.project_nav):hover img {
+        transform: rotate(-45deg);
 
+    }
 }
 
 .project:not(.project_nav) img {
@@ -672,8 +676,10 @@ h1.homepage_heading {
     transition: all .15s ease 0s;
 }
 
-.social a:hover, .cv_btn_container a:hover {
-    opacity: .4;
+@media (min-width: 480px) {
+    .social a:hover, .cv_btn_container a:hover {
+        opacity: .4;
+    }
 }
 
 .cv_btn_container .icon {
@@ -823,8 +829,11 @@ footer span {
     display: inline-flex;
     gap: 12px;
 }
-.intro__project__nav:hover {
-    opacity: .4;
+
+@media (min-width: 480px) {
+    .intro__project__nav:hover {
+        opacity: .4;
+    }
 }
 
 .intro__project__nav img {
@@ -1273,8 +1282,10 @@ footer span {
 
 }
 
-.project_nav:hover .project_nav__content {
-    bottom: 0%;
+@media (min-width: 480px) {
+    .project_nav:hover .project_nav__content {
+        bottom: 0%;
+    }
 }
 
 @media (max-width: 480px) {
