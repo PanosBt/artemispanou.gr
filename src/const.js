@@ -2,7 +2,7 @@ export const PROJECTS = {
     'lazaros_flowers': {
         title: 'Lazaros Flowers',
         chips: ['Branding'],
-        hero_text: 'Α well-established florist in Ilion since 1974',
+        hero_text: 'A well-established florist in Ilion since 1974',
         desc_html: `
             Working on the branding for Lazaros Flowers, I established a fresh and elegant identity. Launching with a redesigned logo, I chose a color close to Metallic Seaweed for vibrancy.
             <br><br>
@@ -66,7 +66,7 @@ export const PROJECTS = {
     'greek_brand_new': {
         title: 'Greek Brand New',
         chips: ['UI/UX Design'],
-        hero_text: 'Α dynamic exhibition that showcases Greek companies',
+        hero_text: 'A dynamic exhibition that showcases Greek companies',
         desc_html: `
             I created the website for Greek Brand New, highlighting an exhibition through a bold color palette of electric blue and bright yellow.
             <br><br>
@@ -90,7 +90,7 @@ export const PROJECTS = {
     'reality_ripples': {
         title: 'Reality Ripples',
         chips: ['UI/UX Design'],
-        hero_text: 'Αn escape room company based in Athens',
+        hero_text: 'An escape room company based in Athens',
         desc_html: `
             I developed a website for Reality Ripples, an escape room company based in Athens. The site showcases their immersive themed rooms, including Deadlock, Boogeyman, Deadlock 2, and Middlearth Tales, using a dark palette of black with red accents to match the atmospheric feel.
             <br>
