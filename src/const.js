@@ -9,7 +9,8 @@ export const PROJECTS = {
             Following that, I crafted business cards and stickers to enhance their overall branding.
             `
         ,
-        main_heading: 'Stickers & Business Card'
+        main_heading: 'Stickers & Business Card',
+        project_desc: 'Logo, Business Card & Stickers'
     },
     'thomas_vision': {
         title: 'Thomas Vision',
@@ -23,7 +24,8 @@ export const PROJECTS = {
             The signs, in two sizes, enhance visibility and invite tourists to embark on unforgettable cruises.
             `
         ,
-        main_heading: 'Brochure, Sign 160X070, 100Χ060'
+        main_heading: 'Brochure, Sign 160X070, 100Χ060',
+        project_desc: 'Brochure, Signs'
     },
     'boat_up': {
         title: 'Boat Up',
@@ -34,7 +36,8 @@ export const PROJECTS = {
             <br><br>
             The branding utilizes a vibrant color palette, featuring Blue (#1B80FA), Light Blue (#87BCFA), and Lightest Blue (#E3EBFB), to convey a sense of trust and clarity.
         `,
-        main_heading: 'Brochure'
+        main_heading: 'Brochure',
+        project_desc: 'Branding, Booklet'
     },
     'nydris': {
         title: 'Nydris',
@@ -45,7 +48,8 @@ export const PROJECTS = {
             <br>
             The design features an elegant blue and white palette, reflecting the island's serene atmosphere. The website highlights villa amenities, activities in Lefkada, floor plans, and a gallery showcasing the villa’s interior and exterior, providing all essential information for a luxurious stay.
         `,
-        main_heading: 'Website & Responsive View'
+        main_heading: 'Website & Responsive View',
+        project_desc: 'Branding, UI / UX Design'
     },
     'rent_me': {
         title: 'Rent me',
@@ -56,7 +60,8 @@ export const PROJECTS = {
             <br><br>
             Featuring orange and white tones, the site allows users to view the fleet of luxurious, modern cars and book the one they need for their vacation with ease and convenience.
         `,
-        main_heading: 'Website & Responsive View'
+        main_heading: 'Website & Responsive View',
+        project_desc: 'UI / UX Design'
     },
     'greek_brand_new': {
         title: 'Greek Brand New',
@@ -67,7 +72,8 @@ export const PROJECTS = {
             <br><br>
             The design incorporates elements of neo-brutalism, guiding users to explore exhibitors and learn how to attend with ease.
         `,
-        main_heading: 'Website & Responsive View'
+        main_heading: 'Website & Responsive View',
+        project_desc: 'UI / UX Design'
     },
     'butterfly_rent_a_car': {
         title: 'Butterfly rent a car',
@@ -78,7 +84,8 @@ export const PROJECTS = {
                 <br><br>
             The site features a vibrant blue and yellow color scheme with geometric elements, offering essential information about Rhodes, attractions to explore, and transportation options from the airport to the rental location, including motorcycle rentals.
         `,
-        main_heading: 'Website & Responsive View'
+        main_heading: 'Website & Responsive View',
+        project_desc: 'UI / UX Design'
     },
     'reality_ripples': {
         title: 'Reality Ripples',
@@ -89,18 +96,20 @@ export const PROJECTS = {
             <br>
             The design focuses on enhancing the eerie and cinematic experience, bringing the rooms' stories to life for players.
         `,
-        main_heading: 'Website & Responsive View'
+        main_heading: 'Website & Responsive View',
+        project_desc: 'UI / UX Design'
     },
     'yitai': {
         title: 'Yitai',
         chips: ['UI/UX Design'],
-        hero_text: 'Α real-world data and AI for healthcare innovation.',
+        hero_text: 'A real-world data and AI for healthcare innovation.',
         desc_html: `
         I designed the website for Yitai, a company leveraging real-world data and AI to drive healthcare innovation.
             <br><br>
         The site features a futuristic design in shades of purple, aimed at highlighting the company's cutting-edge approach and mission to improve patient care through advanced analytics and machine learning.
         `,
-        main_heading: 'Website & Responsive View'
+        main_heading: 'Website & Responsive View',
+        project_desc: 'UI / UX Design'
     },
     'pet365': {
         title: 'Pet 365',
@@ -112,6 +121,7 @@ export const PROJECTS = {
             Then, I designed the website, focusing on a clean, user-friendly, and welcoming experience, with soft pastel tones used throughout the platform.
         `,
         main_heading: 'Website & Responsive view',
+        project_desc: 'Logo, Website'
     },
 };
 
