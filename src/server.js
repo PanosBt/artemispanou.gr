@@ -16,7 +16,7 @@ render(app, {
 });
 
 app.use(router.routes()).use(router.allowedMethods());
-app.use(serve(path.join(__dirname, '..', '/static')));
+app.use(serve(path.join(__dirname, '..', '/static'), { maxage: 365 * 24 * 60 * 60 * 1000 })); // 1y
 
 const port = 5000;
 
