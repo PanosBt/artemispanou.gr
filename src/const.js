@@ -115,4 +115,4 @@ export const PROJECTS = {
     },
 };
 
-export const ASSETS_VERSION = 5;
+export const ASSETS_VERSION = 6;

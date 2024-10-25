@@ -405,10 +405,13 @@ h1.homepage_heading {
     border-radius: 50%;
 }
 
+.projects_container {
+    padding: 200px 0 200px 70px;
+}
+
 .projects {
     display: flex;
     align-items: center;
-    padding: 200px 0 200px 70px;
 }
 
 .projects .projects__intro {
@@ -445,7 +448,7 @@ h1.homepage_heading {
 
 .project {
     width: calc(45vw - 100px);
-    height: calc(38vw - 50px);
+    height: calc(37vw - 50px);
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -507,9 +510,12 @@ h1.homepage_heading {
 }
 
 @media (max-width: 480px) {
+    .projects_container {
+        padding: 50px 0 50px 0px;
+    }
+
     .projects {
         flex-direction: column;
-        padding: 50px 0 50px 0px;
     }
 
     .projects .projects__intro {

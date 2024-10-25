@@ -1,11 +1,8 @@
-
-
 window.onload = () => {
     const inHomepage = document.body.classList.contains('homepage');
     if (inHomepage) {
         window.addEventListener('scroll', () => {
             const scrollTop = window.scrollY;
-            const windowHeight = window.innerHeight;
             const offset = 250;
             const minOpacity = 0.2;
 
@@ -14,9 +11,9 @@ window.onload = () => {
             const elementHeight = element.offsetHeight;
 
             // Calculate when the element starts to enter and fully leaves the viewport
-            if (scrollTop + windowHeight > elementTop) {
-                // Calculate how much of the element has been scrolled past by the 250px threshold
-                const distanceScrolled = scrollTop + windowHeight - elementTop;
+            if (scrollTop + window.innerHeight > elementTop) {
+                // Calculate how much of the element has been scrolled past by the offset threshold
+                const distanceScrolled = scrollTop + window.innerHeight - elementTop;
                 const adjustedScroll = Math.max(0, distanceScrolled - offset);
 
                 // Calculate opacity based on how far past the offset the user has scrolled
@@ -31,12 +28,12 @@ window.onload = () => {
             });
         });
 
-        const projectsSection = document.querySelector('.projects');
-        const carousel = document.querySelector('.projects__carousel');
-        const additionalScrollOffset = carousel.clientHeight + 350;
-
-        let isInView = false;
-        let isCarouselScrolling = false;
+        const projectsSection = document.querySelector('.projects'),
+            carousel = document.querySelector('.projects__carousel')
+        ;
+        let isInView = false,
+            isCarouselScrolling = false
+        ;
 
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
@@ -54,15 +51,17 @@ window.onload = () => {
 
         window.addEventListener('wheel', (e) => {
             if (isInView) {
-                const projectsTop = projectsSection.getBoundingClientRect().top;
-                const projectsBottom = projectsTop + projectsSection.clientHeight;
+                const projectsClientRect = projectsSection.getBoundingClientRect(),
+                    projectsTop = projectsClientRect.top,
+                    projectsBottom = projectsClientRect.bottom
+                ;
 
-                // Check if the user has entered the scrolling window or is already scrolling
-                if ((e.deltaY > 0 && projectsTop < window.innerHeight - additionalScrollOffset) ||
-                    e.deltaY < 0 && projectsBottom > additionalScrollOffset ||
+                if ((e.deltaY > 0 && projectsBottom < window.innerHeight) ||
+                    e.deltaY < 0 && projectsTop > 0 && projectsTop < window.innerHeight ||
                     isCarouselScrolling
                 ) {
-                    document.body.style.overflowY = 'hidden'; // lock vertical scroll for whole body
+                    // user has entered the scrolling window or is already scrolling
+                    document.body.style.overflowY = 'hidden'; // lock vertical scroll
                     carousel.scrollLeft += e.deltaY; // apply vertical scroll to horizontal scroll
                     isCarouselScrolling = true;
 

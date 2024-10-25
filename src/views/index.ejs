@@ -100,18 +100,20 @@
     </div>
 </div>
 
-<div class="projects">
-    <div class="projects__intro">
-        <h3>Projects</h3>
-        <div class="desc"><span>A selection of my work, built from scratch!</span></div>
-        <a href="/case_studies" class="chip chip--btn desktop_only"><span>Case Studies</span></a>
+<div class="projects_container">
+    <div class="projects">
+        <div class="projects__intro">
+            <h3>Projects</h3>
+            <div class="desc"><span>A selection of my work, built from scratch!</span></div>
+            <a href="/case_studies" class="chip chip--btn desktop_only"><span>Case Studies</span></a>
+        </div>
+        <div class="projects__carousel">
+            <% Object.keys(projects).forEach(function(key) { %>
+                <%- include('project', { name: key, project: projects[key] }); %>
+            <% }); %>
+        </div>
+        <a href="/case_studies" class="chip chip--btn mobile_only"><span>Case Studies</span></a>
     </div>
-    <div class="projects__carousel">
-        <% Object.keys(projects).forEach(function(key) { %>
-            <%- include('project', { name: key, project: projects[key] }); %>
-        <% }); %>
-    </div>
-    <a href="/case_studies" class="chip chip--btn mobile_only"><span>Case Studies</span></a>
 </div>
 
 <%- include('footer') %>
