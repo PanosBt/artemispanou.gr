@@ -102,7 +102,7 @@ export const PROJECTS = {
     'yitai': {
         title: 'Yitai',
         chips: ['UI/UX Design'],
-        hero_text: 'A real-world data and AI for healthcare innovation.',
+        hero_text: 'A real-world data and AI for healthcare innovation',
         desc_html: `
         I designed the website for Yitai, a company leveraging real-world data and AI to drive healthcare innovation.
             <br><br>
@@ -114,7 +114,7 @@ export const PROJECTS = {
     'pet365': {
         title: 'Pet 365',
         chips: ['Branding', 'UI/UX Design'],
-        hero_text: 'A Small family company with boats in Lakki Leros for renting',
+        hero_text: 'Branding & Website design for a local pet shop in Acharnes',
         desc_html: `
             Taking on the design for Pet365, I crafted a modern identity that reflects care and love for pets. Starting with a fresh logo, I used shades of blue and purple to bring vibrancy.
             <br><br>
