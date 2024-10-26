@@ -66,7 +66,7 @@ export const PROJECTS = {
     'greek_brand_new': {
         title: 'Greek Brand New',
         chips: ['UI/UX Design'],
-        hero_text: 'A dynamic exhibition that showcases Greek companies',
+        hero_text: 'A dynamic physical exhibition that showcases Greek companies',
         desc_html: `
             I created the website for Greek Brand New, highlighting an exhibition through a bold color palette of electric blue and bright yellow.
             <br><br>
@@ -125,4 +125,4 @@ export const PROJECTS = {
     },
 };
 
-export const ASSETS_VERSION = 9;
+export const ASSETS_VERSION = 10;
