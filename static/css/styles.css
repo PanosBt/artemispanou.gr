@@ -477,8 +477,14 @@ h1.homepage_heading {
 
 .projects .desc span {
     color: #fff;
-    font-size: 30px;
+    font-size: 1.6vw;
     font-weight: 400;
+}
+
+@media (max-width: 1440px) {
+    .projects .desc span {
+        font-size: 1.8vw;
+    }
 }
 
 .projects .projects__carousel {
@@ -494,6 +500,7 @@ h1.homepage_heading {
 .project {
     width: calc(45vw - 100px);
     height: calc(37vw - 50px);
+    padding: 0 50px 50px;
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -502,11 +509,18 @@ h1.homepage_heading {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 0 50px 50px;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
     -o-transition: all .5s ease;
     transition: all .5s ease;
+}
+
+@media (max-width: 1024px) {
+    .project {
+        width: calc(45vw - 60px);
+        height: calc(37vw - 30px);
+        padding: 0 30px 30px;
+    }
 }
 
 @media (min-width: 480px) {
@@ -1130,6 +1144,10 @@ h3.project_main__cta {
 
     .project_main__data .data {
         font-size: 7vw;
+    }
+
+    .project_main__data .data__title {
+        max-width: 35vw;
     }
 
     .project_main__description {
