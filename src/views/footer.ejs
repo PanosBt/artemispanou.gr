@@ -20,8 +20,13 @@
     <span>copyright 2024 Designed with Love by Me</span>
 </footer>
 
-<script src="/ext/js/fslightbox.js"></script>
-<script src="/js/artemispanou.js?v=<%= assets_version %>"></script>
+<% if ( typeof include_lightbox_js != 'undefined' && include_lightbox_js) { %>
+    <script src="/ext/js/fslightbox.js"></script>
+<% } %>
+
+<% if ( typeof include_js != 'undefined' && include_js) { %>
+    <script src="/js/artemispanou.js?v=<%= assets_version %>"></script>
+<% } %>
 
 </body>
 </html>
