@@ -382,7 +382,7 @@ h1.homepage_heading {
     font-family: 'Syne';
     color: #CDCBD10A;
     display: inline-block;
-    padding-right: 2rem;
+    padding-right: 1rem;
 }
 
 @keyframes marquee {
