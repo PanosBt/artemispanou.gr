@@ -207,8 +207,8 @@ p {
 }
 
 .chip--btn {
-    width: 7.45vw;
-    height: 2.1vw;
+    width: 140px;
+    height: 40px;
     border-color:#545CFF;
     -webkit-transition: all .2s ease;
     -moz-transition: all .2s ease;
@@ -228,13 +228,8 @@ p {
 }
 
 @media (max-width: 1440px) {
-    .chip span {
-        font-size: 1vw;
-    }
-
-    .chip--btn {
-        width: 8.94vw;
-        height: 2.52vw;
+    .chip:not(.chip--btn) span {
+        font-size: 1.1vw;
     }
 }
 
@@ -244,7 +239,7 @@ p {
         width: 165px;
     }
 
-    .chip span {
+    .chip span, .chip:not(.chip--btn) span {
         font-size: 3.5vw;
     }
 
@@ -369,59 +364,60 @@ h1.homepage_heading {
     }
 }
 
-.moving_txt_container {
+.marquee {
     width: 100%;
-    height: 150px;
     overflow: hidden;
-    padding-bottom: 100px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    padding-bottom: 70px;
 }
 
-.moving_txt {
+.marquee__inner {
+    display: inline-flex;
+    animation: marquee 20s linear infinite;
+}
+
+.marquee__inner span {
     font-size: 150px;
     font-family: 'Syne';
     color: #CDCBD10A;
-    position: relative;
-    white-space: nowrap;
-    margin: 0;
-    animation: move-words 20s linear infinite;
-    -webkit-animation: move-words 20s linear infinite;
-    -moz-animation: move-words 20s linear infinite;
+    display: inline-block;
+    padding-right: 2rem;
 }
 
-@keyframes move-words {
+@keyframes marquee {
     0% {
-      left: 100%;
+      transform: translateX(0%);
     }
     100% {
-      left: -100%;
+      transform: translateX(-50%);
     }
 }
 
-@-webkit-keyframes move-words {
+@-webkit-keyframes marquee {
     0% {
-      left: 100%;
+      transform: translateX(0%);
     }
     100% {
-      left: -100%;
+      transform: translateX(-50%);
     }
 }
 
-
-@-moz-keyframes move-words {
+@-moz-keyframes marquee {
     0% {
-      left: 100%;
+      transform: translateX(0%);
     }
     100% {
-      left: -100%;
+      transform: translateX(-50%);
     }
 }
 
 @media (max-width: 480px) {
-    .moving_txt_container {
-        height: 70px;
+    .marquee {
+        padding-top: 70px;
     }
 
-    .moving_txt {
+    .marquee__inner span {
         font-size: 70px;
     }
 }
@@ -863,7 +859,6 @@ footer span {
     }
 
     .case_studies__intro > span {
-        text-align: center;
         margin-bottom: 40px;
     }
 
@@ -877,6 +872,7 @@ footer span {
         margin: 50px 0 40px 0;
         flex-direction: column-reverse;
         align-items: flex-start;
+        gap: 40px;
     }
 
     .case_studies__intro span {
@@ -1358,6 +1354,14 @@ h3.project_main__cta {
     width: calc(45.5vw - 100px);
     height: calc(23vw - 30px);
     padding-bottom: 30px;
+}
+
+@media (max-width: 1024px) {
+    .project_nav {
+        width: calc(44vw - 60px);
+        height: calc(21vw - 30px);
+        padding: 0 30px 30px;
+    }
 }
 
 .project_nav__content span {
