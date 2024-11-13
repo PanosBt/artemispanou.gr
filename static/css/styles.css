@@ -785,6 +785,17 @@ footer span {
     font-size: 14px;
 }
 
+@media (min-width: 480px) {
+    footer a:hover {
+        opacity: .4;
+    }
+
+    footer a {
+        -webkit-transition: all .15s ease 0s;
+        transition: all .15s ease 0s;
+    }
+}
+
 @media (max-width: 480px) {
     footer {
         margin: 15px 0;
