@@ -1,4 +1,46 @@
 export const PROJECTS = {
+    'celeste': {
+        title: 'Celeste',
+        chips: ['Branding'],
+        hero_text: 'Branding & Website design for a luxury hospitality template.',
+        desc_html: `
+            Celeste is a modern and minimal website template created for the luxury hospitality industry. Inspired by Mediterranean elegance, it was designed to offer a seamless digital experience for boutique villas and high-end accommodations.
+            <br><br>
+            As a solo project, I handled everything from the ground up — brand identity, logo design, UX/UI, and responsive layout creation. The visual language combines clarity, calmness, and modern aesthetics, aiming to enhance the online presence of a premium hospitality business.
+            `
+        ,
+        main_heading: 'Website & Responsive view',
+        project_desc: 'Logo, Website',
+        year: '2025'
+    },
+    'fitcore': {
+        title: 'Fitcore',
+        chips: ['Branding'],
+        hero_text: 'Branding & Website design for a mobile-first gym platform.',
+        desc_html: `
+            Fitcore is a mobile-first website template created for modern gyms and fitness businesses. Designed in-house to serve as a flexible base for client projects, it includes a built-in BMI calculator and class booking functionality.
+            <br><br>
+            I developed the entire project from scratch including the logo, brand identity, UI design, and responsive layouts focusing on a bold and energetic visual language tailored for fitness-focused users.
+            `
+        ,
+        main_heading: 'Website & Responsive view',
+        project_desc: 'Logo, Website',
+        year: '2025'
+    },
+    'axon': {
+        title: 'Axon',
+        chips: ['Branding'],
+        hero_text: 'Branding & Website design for a mobile-first Construction template.',
+        desc_html: `
+            Axon is a mobile-first website template designed for the construction industry. Built in 2025, it offers a responsive and modern solution for companies and professionals.
+            <br><br>
+            I created everything from scratch including the logo and full UI. The template includes three homepage variations, tailored for individual clients, construction businesses, and public project contractors.
+            `
+        ,
+        main_heading: 'Website & Responsive view',
+        project_desc: 'Logo, Website',
+        year: '2025'
+    },
     'lazaros_flowers': {
         title: 'Lazaros Flowers',
         chips: ['Branding'],

@@ -852,15 +852,13 @@ footer span {
     padding: 170px 4vw;
     flex-wrap: wrap;
     background-color: #1C2430;
-}
-
-.use_cases a:not(:nth-child(2n)) {
-    margin-right: 1.6vw;
+    gap: 1.6vw;
 }
 
 .use_cases a {
     flex-basis: calc(50% - 30px);
     margin-bottom: 30px;
+    margin-right: auto;
 }
 
 @media (max-width: 1140px) {
@@ -899,7 +897,7 @@ footer span {
     .use_cases a {
         margin-right: 0 !important;
         flex-basis: unset;
-        margin-bottom: 45px;
+        margin-bottom: calc(45px - 1.6vw);
     }
 }
 
