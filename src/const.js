@@ -20,7 +20,7 @@ export const PROJECTS = {
         desc_html: `
             Fitcore is a mobile-first website template created for modern gyms and fitness businesses. Designed in-house to serve as a flexible base for client projects, it includes a built-in BMI calculator and class booking functionality.
             <br><br>
-            I developed the entire project from scratch including the logo, brand identity, UI design, and responsive layouts focusing on a bold and energetic visual language tailored for fitness-focused users.
+            I designed the entire project from scratch including the logo, brand identity, UI design, and responsive layouts focusing on a bold and energetic visual language tailored for fitness-focused users.
             `
         ,
         main_heading: 'Website & Responsive view',
